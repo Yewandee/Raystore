@@ -22,6 +22,7 @@ function App() {
           <Route path="/logout" element={<Logout />} />
         </Routes>
       </Router>
+      <HomeSlide/>
       <About/>
       <Shop/>
       <Footer/>

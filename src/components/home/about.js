@@ -4,6 +4,7 @@ import '../home/about.css'
 
 import img4 from "../images/img4.jpg";
 import img5 from "../images/img5.jpg";
+import Shop from "../shop/shop";
 
 
 
@@ -65,7 +66,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+           
         </div>
+        
     )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Sdata from './shopdata'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Shop = () => {
     <div className='content grid product'>
