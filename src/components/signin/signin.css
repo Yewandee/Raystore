@@ -1,0 +1,18 @@
+.containerr{
+    background-image: url('../images/background.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .containerbox{
+    position: 'absolute';
+     top: 50%;
+      left: 50px;
+       transform: translate(0,-50%); 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       align-self: center;
+       /* container-flui d-flex justify-content-center align-items-center align-self-center */
+

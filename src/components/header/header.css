@@ -1,0 +1,16 @@
+.light {
+  --bg-color: white;
+  --text-color: black;
+}
+
+.dark {
+  --bg-color: black;
+  --text-color: white;
+}
+.navrbar ul li{
+  display: inline-block;
+  text-align: right;
+  list-style: none;
+  padding: 8px 12px;
+  position: relative;
+}

@@ -1,0 +1,21 @@
+.slider-item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.7); */
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    max-width: 80%; /* Adjust as needed */
+  }
+  
+  h3,
+  p {
+    margin: 0;
+  }

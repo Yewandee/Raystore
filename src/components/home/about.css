@@ -1,0 +1,70 @@
+:root {
+    --primary: #B78D65;
+    --light: #F8F8F8;
+    --dark: #252525;
+}
+
+h1,
+h2,
+.h1,
+.h2,
+.fw-bold {
+    font-weight: 600 !important;
+}
+
+h3,
+h4,
+.h3,
+.h4,
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+h5,
+h6,
+.h5,
+.h6,
+.fw-normal {
+    font-weight: 400 !important;
+}
+
+.about-img{
+    position: relative;
+    height: 100%;
+    margin-right: 20%;
+    min-height: 400px;
+}
+.about-img img{
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    margin: 0 0 0 25%;
+    object-fit: cover;
+}
+.about-img img:last-child{
+    margin: 30% 0 0 60%;
+}
+
+.about-img::before{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    top: 10%;
+    left: 40%;
+    border: 5px solid var(--primary);
+    z-index: -1;
+}
+.about-text{
+    text-align: left;
+}
+.about-text h4{
+    color: #B78D65;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.cont{
+    border: 5px solid #B78D65;
+    width: 120px;
+    height: 120px; 
+}
