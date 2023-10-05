@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <div>
 
-            <nav className="navbar sticky-top navbar-expand-lg bg-light d-flex justify-content-between ">
+            <nav className="navbar sticky-top navbar-expand-lg bg-light d-flex justify-content-evenly ">
                 <div className="container-fluid">
 
                     <NavLink className="navbar-brand">
