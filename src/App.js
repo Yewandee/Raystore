@@ -24,7 +24,7 @@ function App() {
       </Router>
       <HomeSlide/>
       <About/>
-      <Shop/>
+      <Shop />
       <Footer/>
 
     </div>
