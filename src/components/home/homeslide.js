@@ -37,10 +37,6 @@ const HomeSlide = () => {
                 </div>
               </div>
             </div>
-
-
-
-
           )
         })}
       </Slider>

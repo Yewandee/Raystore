@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <div>
 
-            <nav className="navbar sticky-top navbar-expand-lg bg-light d-flex justify-content-evenly ">
+            <nav className="navbar sticky-top navbar-expand-lg bg-light d-flex justify-content-center ">
                 <div className="container-fluid">
 
                     <NavLink className="navbar-brand">
@@ -36,9 +36,9 @@ const Header = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbarr navbar-collapse" id="navbarNav">
                     <Navbar.Collapse className={isMenuOpen ? 'show' : ''}>
-                        <ul className="navbar-nav me-auto  d-flex justify-content-md-around ">
+                        <ul className="navbar-nav   d-flex justify-content-md-around ">
 
 
                             <li className="nav-item active">

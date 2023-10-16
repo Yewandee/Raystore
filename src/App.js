@@ -9,6 +9,8 @@ import About from './components/home/about';
 import Logout from './components/logout/logout';
 import Footer from './components/footer/footer';
 import Shop from './components/shop/shop';
+import Pages from './pages/pages';
+
 
 function App() {
   return (
@@ -22,9 +24,8 @@ function App() {
           <Route path="/logout" element={<Logout />} />
         </Routes>
       </Router>
-      <HomeSlide/>
-      <About/>
-      <Shop />
+  
+      <Pages />
       <Footer/>
 
     </div>

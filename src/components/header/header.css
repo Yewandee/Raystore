@@ -7,10 +7,12 @@
   --bg-color: black;
   --text-color: white;
 }
-.navrbar ul li{
-  display: inline-block;
-  text-align: right;
+.navbarr ul li{
+  display: flex;
+  font-size: 15px;
+  margin-left: 100px;
   list-style: none;
-  padding: 8px 12px;
+  padding: 5px 5px;
   position: relative;
+  /* justify-content: end; */
 }
