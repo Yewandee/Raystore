@@ -16,3 +16,12 @@
   position: relative;
   /* justify-content: end; */
 }
+.c_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f_flex {
+  display: flex;
+}

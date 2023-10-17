@@ -18,15 +18,14 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route path="/" element={<Pages />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/home" element={<HomeSlide />} />
           <Route path="/logout" element={<Logout />} />
         </Routes>
       </Router>
-  
-      <Pages />
-      <Footer/>
+
+      <Footer />
 
     </div>
   );

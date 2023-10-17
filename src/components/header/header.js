@@ -2,8 +2,9 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../header/header.css'
 import { useState } from 'react';
-import { NavLink,  } from 'react-router-dom';
+import { NavLink, } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
+import Search from './search';
 
 
 
@@ -11,17 +12,38 @@ import { Navbar } from 'react-bootstrap';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleSignIn = () => {
+        setIsLoggedIn(true);
+    };
+    const handleSignOut = () => {
+        setIsLoggedIn(false);
+    };
     const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
+        setIsMenuOpen(!isMenuOpen);
     };
 
     const handleLogout = () => {
-        localStorage.clear(); 
-        sessionStorage.clear(); 
-    
-        window.location.href = '/signin'; 
-      };
-  
+        localStorage.clear();
+        sessionStorage.clear();
+
+        window.location.href = '/signin';
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
+        for (const link of navLinks) {
+            link.addEventListener("click", function () {
+                const navbarToggler = document.querySelector(".navbar-toggler");
+                if (navbarToggler.style.display !== "none") {
+                    navbarToggler.click();
+                }
+            });
+        }
+    });
+
+
     return (
         <div>
 
@@ -37,27 +59,27 @@ const Header = () => {
                     </button>
 
                     <div className="collapse navbarr navbar-collapse" id="navbarNav">
-                    <Navbar.Collapse className={isMenuOpen ? 'show' : ''}>
-                        <ul className="navbar-nav   d-flex justify-content-md-around ">
+                        <Navbar.Collapse className={isMenuOpen ? 'show' : 'none'}>
+                            <ul className="navbar-nav   d-flex justify-content-md-around ">
 
 
-                            <li className="nav-item active">
-                                <NavLink className="nav-link" aria-current="page" to='/home'>Home</NavLink>
-                            </li>
+                                <li className="nav-item active">
+                                    <NavLink className="nav-link" aria-current="page" to='/'>Home</NavLink>
+                                </li>
 
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to='/signin'>Sign In</NavLink>
-                            </li>
+                                {!isLoggedIn &&<li className="nav-item">
+                                    <NavLink className="nav-link" onClick={handleSignIn} to='/signin'>Sign In</NavLink>
+                                </li>}
+                                {!isLoggedIn && <li className="nav-item">
+                                    <NavLink className="nav-link" onClick={handleSignOut} to='/signup'>Sign Up</NavLink>
+                                </li>}
+                              
 
-                            <li className="nav-item">
-                                <NavLink className="nav-link" to='/signup'>Sign Up</NavLink>
-                            </li>
+                               {isLoggedIn && <li className="nav-item">
+                                    <NavLink className="nav-link" onClick={handleLogout}>Log Out</NavLink>
+                                </li>}
 
-                            <li className="nav-item">
-                                <NavLink className="nav-link" onClick={handleLogout}>Log Out</NavLink>
-                            </li>
-
-                        </ul>
+                            </ul>
 
                         </Navbar.Collapse>
 
@@ -66,7 +88,9 @@ const Header = () => {
                 </div>
 
             </nav>
+            <Search />
         </div>
+
     )
 }
 
