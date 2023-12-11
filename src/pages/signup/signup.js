@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import "../signup/signup.css"
+import "./signup.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const Signup = () => {

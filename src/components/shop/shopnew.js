@@ -5,7 +5,6 @@ import "./shop.css"
 
 const NewArrivals = () => {
   return (
-    <>
       <section className='NewArrivals background'>
         <div className='container'>
           <div className='heading d_flex'>
@@ -22,7 +21,6 @@ const NewArrivals = () => {
           {/* <Shop /> */}
         </div>
       </section>
-    </>
   )
 }
 

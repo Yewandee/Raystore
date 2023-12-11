@@ -1,18 +1,20 @@
 import React from 'react'
 import HomeSlide from '../components/home/homeslide'
 import About from '../components/home/about'
-import Shop from '../components/shop/shop'
 import Wrapper from '../components/wrapper/wrapper'
+import Shops from '../components/shopp/shop'
+
 
 
 const Pages = () => {
     return (
-        <div>
+        <section>
             <HomeSlide />
             <About />
-            <Shop />
+            <Shops />
             <Wrapper/>
-        </div>
+           
+        </section>
     )
 }
 

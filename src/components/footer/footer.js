@@ -8,7 +8,7 @@ const Footer = () => {
       <footer>
         <div className='container'>
             <div className='row'>
-            <div className='box col-lg-3'>
+            <div className='box col-lg-3 col-md-6'>
             <h1>RAYSTORE</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
             <div className='icon d_flex'>
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='box col-3'>
+          <div className='box col-lg-3 col-md-6'>
             <h2>About Us</h2>
             <ul>
               <li>Our Stores</li>
@@ -32,7 +32,7 @@ const Footer = () => {
               <li>Privacy Policy</li>
             </ul>
           </div>
-          <div className='box col-3'>
+          <div className='box col-lg-3 col-md-6'>
             <h2>Customer Care</h2>
             <ul>
               <li>Help Center </li>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li>Returns & Refunds </li>
             </ul>
           </div>
-          <div className='box col-3'>
+          <div className='box col-lg-3 col-md-6'>
             <h2>Contact Us</h2>
             <ul>
               <li>10 Adeniyi Jones, Victoria Island </li>

@@ -45,12 +45,12 @@ const Header = () => {
 
 
     return (
-        <div>
+        <header>
 
             <nav className="navbar sticky-top navbar-expand-lg bg-light d-flex justify-content-center ">
                 <div className="container-fluid">
 
-                    <NavLink className="navbar-brand">
+                    <NavLink className="navbar-brand" >
                         <h1>RAYSTORE</h1>
                     </NavLink>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,6 +65,14 @@ const Header = () => {
 
                                 <li className="nav-item active">
                                     <NavLink className="nav-link" aria-current="page" to='/'>Home</NavLink>
+                                </li>
+
+                                <li className="nav-item active">
+                                    <NavLink className="nav-link"  to='/about'>About</NavLink>
+                                </li>
+
+                                <li className="nav-item active">
+                                    <NavLink className="nav-link"  to='/contact'>Contact</NavLink>
                                 </li>
 
                                 {!isLoggedIn &&<li className="nav-item">
@@ -89,7 +97,7 @@ const Header = () => {
 
             </nav>
             <Search />
-        </div>
+        </header>
 
     )
 }

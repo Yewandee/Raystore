@@ -2,9 +2,9 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../home/about.css'
 
-import img4 from "../images/img4.jpg";
-import img5 from "../images/img5.jpg";
-import Shop from "../shop/shop";
+import img4 from "../../assets/images/img4.jpg";
+import img5 from "../../assets/images/img5.jpg";
+// import Shop from "../shop/shop";
 
 
 
@@ -45,8 +45,8 @@ const About = () => {
                 <div className="row align-">
                     <div className="col-12 col-md-6">
                         <div className="about-img">
-                            <img src={img4} alt="" srcset="" />
-                            <img src={img5} alt="" srcset="" />
+                            <img src={img4} alt="About 1" srcset="" />
+                            <img src={img5} alt="About 2" srcset="" />
                         </div>
                     </div>
                     <div className="col-12 col-md-6 about-text" >
@@ -62,7 +62,7 @@ const About = () => {
                         </p>
 
                 
-                        <a className="btn btn-primary py-3 px-5 butn" href="">Shop Now</a>
+                        <a className="btn  py-3 px-5 butn" href="/">Shop Now</a>
                     </div>
                 </div>
             </div>

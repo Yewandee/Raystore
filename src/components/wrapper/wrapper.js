@@ -30,8 +30,8 @@ const Wrapper = () => {
             <div className='container grid2'>
                 {Wdata.map((val, value) => {
                     return (
-                        <div className='prod ' key={value}>
-                            <div className='img icon-circle'>
+                        <div className='prod  ' key={value}>
+                            <div className='img icon-circle' >
                                 <i>{val.cover}</i>
                             </div>
                             <h3>{val.title}</h3>

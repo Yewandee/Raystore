@@ -16,6 +16,9 @@
   position: relative;
   /* justify-content: end; */
 }
+.navbar-brand{
+  margin-left: 30px;
+}
 .c_flex {
   display: flex;
   justify-content: space-between;

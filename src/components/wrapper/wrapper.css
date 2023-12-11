@@ -27,11 +27,12 @@
 }
 .wrapper .prod h3 {
   font-weight: 500;
+  color: #000000;
 }
 .wrapper p {
   font-size: 15px;
   margin-top: 20px;
-  color: grey;
+  color: #000000;
 }
 .grid2 {
     display: grid;
@@ -53,12 +54,12 @@
 .prod:hover {
     background-color: var(--dark);
     transition: .5s;
+    
 }
-.prod h3{
+.prod:hover h3{
     color: var(--light);
-   
 }
-/* .prod {
-    color: var(--dark);
-    transition: .5;
-} */
+.prod:hover p{
+  color: var(--light);
+ 
+}

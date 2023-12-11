@@ -12,22 +12,26 @@ const Shop = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 3,
         autoplay: true,
     }
+
     return (
-        <div className='container grid product '>
+        <div className='product'>
             <Slider {...settings}>
-                {Sdata.map((val, value) => {
+                {Sdata.map((val) => {
                     console.log("val", val)
                     return (
-                        <div className='box' key={value}>
-                            <div className='img'>
-                                <img src={val.cover} alt='' style={{ width: '80px', height: '80px' }} />
+                        <div className='staticImageFrame'>
+                            <div className='staticSingleFrame' key={val.id}>
+                                <div className='imgContainer'>
+                                    <img src={val.cover} alt='cover' className='imageContainer' />
+                                    {/* <img src={val.cover} alt='' style={{ width: '80px', height: '80px' }} /> */}
+                                </div>
+                                <h4>{val.name}</h4>
+                                <span>${val.price}</span>
                             </div>
-                            <h4>{val.name}</h4>
-                            <span>${val.price}</span>
                         </div>
                     )
                 })}
