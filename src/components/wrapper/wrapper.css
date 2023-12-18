@@ -37,6 +37,8 @@
 .grid2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    display: flexbox;
+    flex-wrap: wrap;
     grid-gap: 10px;
     transition: .5s;
 }

@@ -6,15 +6,6 @@
   overflow: hidden;
 }
 
-
-
-
-/* .product  {
-  font-size: 15px;
-  color: #ffcd4e;
-  margin: 5px 5px 5px 0;
-} */
-
 .product {
   display: flex;
   justify-content: space-between;
@@ -24,10 +15,12 @@
 .product:hover .product-like {
   opacity: 1;
 }
-.d_flex {
+/* .d_flex {
   display: flex;
+  align-items: center;
+  margin: 0 auto;
   justify-content: space-between;
-}
+} */
 
 .c_flex {
   display: flex;

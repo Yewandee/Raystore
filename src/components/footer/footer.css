@@ -11,7 +11,6 @@ footer h1 {
 }
 footer .img {
   background-color: #b78d65;
-  padding: 15px 20px;
   border-radius: 5px;
 }
 footer .img i {
@@ -19,7 +18,7 @@ footer .img i {
   margin: 5px;
 }
 footer .img span {
-  margin-top: 5px;
+  width: 100%;
 }
 footer p {
   font-size: 14px;

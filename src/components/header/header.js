@@ -78,10 +78,10 @@ const Header = () => {
                                 {!isLoggedIn &&<li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleSignIn} to='/signin'>Sign In</NavLink>
                                 </li>}
-                                {!isLoggedIn && <li className="nav-item">
+                                {/* {!isLoggedIn && <li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleSignOut} to='/signup'>Sign Up</NavLink>
                                 </li>}
-                              
+                               */}
 
                                {isLoggedIn && <li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleLogout}>Log Out</NavLink>

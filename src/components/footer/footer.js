@@ -47,7 +47,7 @@ const Footer = () => {
             <ul>
               <li>10 Adeniyi Jones, Victoria Island </li>
               <li>Email: raystore.help@gmail.com</li>
-              <li>Phone: +234 90 9047 4500</li>
+              <li>Phone: +2348158348908</li>
             </ul>
           </div>
             </div>

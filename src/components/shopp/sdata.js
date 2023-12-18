@@ -11,51 +11,58 @@ const Sdata = {
         {
             id: 4,
             cover: img4,
-            name: "Soft Care",
-            price: "6,000",
+            name: "soft care",
+            price: "6000",
             discount: "10",
+            qty: 1
         },
         {
             id: 5,
             cover: img5,
-            name: "Moisturizer",
-            price: "4,000",
+            name: "moisturizer",
+            price: "4000",
             discount: "10",
+            qty: 1
         },
         {
             id: 6,
             cover: img6,
-            name: "Face Wash",
-            price: "4,000",
+            name: "face wash",
+            price: "4000",
             discount: "10",
+            qty: 1
         },
         {
             id: 7,
             cover: img7,
-            name: "Gentle Wash",
-            price: "5,000",
+            name: "gentle wash",
+            price: "5000",
             discount: "10",
+            qty: 1
         },
         {
             id: 8,
             cover: img8,
-            name: "Hydraucloric Acid",
-            price: "6,000",
+            name: "kojic",
+            price: "6000",
             discount: "10",
+            qty: 1
         },
         {
             id: 9,
             cover: img9,
-            name: "Serum",
-            price: "4,500",
+            name: "serum",
+            price: "4500",
             discount: "10",
+            qty: 1
         },
         {
             id: 10,
             cover: img10,
-            name: "Nivea Body Cream",
-            price: "2,500",
+            name: "nivea cream",
+            price: "2500",
             discount: "10",
+            qty: 1
         },
     ]
 }

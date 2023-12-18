@@ -4,38 +4,90 @@ import Slider from 'react-slick'
 import ShopCart from './shopcart'
 import './shop.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Cart from '../cart/cart'
+import { useDispatch } from 'react-redux'
+import { AddItemToCart, setCart } from '../../redux/reducer'
 
-const Shops = ({addToCart, shopItems}) => {
-    const SDataValue = Sdata.shopItems
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 7,
-        slidesToScroll: 1,
-        autoplay: true,
+const Shops = () => {
+    const dispatch = useDispatch()
+    const [count, setCount] = useState(0)
+
+    const increment = () => {
+        setCount(count + 1)
     }
+
+    const [CartItem, setCartItem] = useState([])
+
+    console.log(`Cart==>`, CartItem)
+
+
+    // const addToCart = (product) => {
+    //     const productExit = CartItem.find((val) => val.id === product.id)
+    //     if (productExit) {
+    //         setCartItem(CartItem.map((val) => (val.id === product.id ? { ...productExit, qty: productExit.qty + 1 } : val)))
+    //     } else {
+    //         setCartItem([...CartItem, { ...product, qty: 1 }])
+    //     }
+    // }
+    const addToCart = (product) => {
+        dispatch(AddItemToCart(product))
+    }
+    const SDataValue = Sdata.shopItems
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 7,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    // }
 
     return (
 
-        <div className='product'>
+        <div className='product my-5'>
 
             {SDataValue.map((val) => {
-                console.log("val", val)
+                // console.log("val", val)
                 return (
 
-                    <div className='staticImageFrame'>
-                        <div className='staticSingleFrame' key={val.id}>
-                            <div className='imgContainer'>
-                                <img src={val.cover} alt='cover' className='imageContainer' />
-                            </div>
-                            <h5>{val.name}</h5>
-                            <p>${val.price}.00</p>
-                           
-                        </div>
-                        {/* <ShopCart addToCart={addToCart} shopItems={shopItems}/> */}
-                    </div>
+                    <div key={val.id}>
+                        <div className='staticImageFrame'>
+                            <div className='staticSingleFrame' >
 
+                                <div className='imgContainer'>
+                                    <img src={val.cover} alt='cover' className='imageContainer' />
+                                    <div className='product-like'>
+                                        <label>{count}</label> <br />
+                                        <i className='fa-regular fa-heart' onClick={increment}></i>
+                                    </div>
+
+                                </div>
+
+                                <h5>{val.name.toUpperCase()}</h5>
+                                <p>${val.price}.00</p>
+
+
+                                <div className='product-details'>
+                                    <div className='rate'>
+                                        <i className='fa fa-star'></i>
+                                        <i className='fa fa-star'></i>
+                                        <i className='fa fa-star'></i>
+                                        <i className='fa fa-star'></i>
+                                        <i className='fa fa-star'></i>
+                                    </div>
+                                    <div className='price'>
+
+                                        <button onClick={() =>
+                                            addToCart(val)
+                                        }>
+                                            <i className='fa fa-plus' ></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 )
             })}
 
