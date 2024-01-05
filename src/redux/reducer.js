@@ -30,14 +30,19 @@ export const recipeReducer = createSlice({
             } else {
                 return
             }
+        },
+        DeleteItemfromCart: (state, action) => {
+          
         }
+
     }
 })
 
 export const {
     setMode,
     AddItemToCart,
-    RemoveItemfromCart
+    RemoveItemfromCart,
+    DeleteItemfromCart
 } = recipeReducer.actions;
 
 export default recipeReducer.reducer;

@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Cart from '../cart/cart'
 import { useDispatch } from 'react-redux'
 import { AddItemToCart, setCart } from '../../redux/reducer'
+import Grid from '@mui/material/Grid';
+
 
 const Shops = () => {
     const dispatch = useDispatch()
@@ -49,45 +51,49 @@ const Shops = () => {
             {SDataValue.map((val) => {
                 // console.log("val", val)
                 return (
+                    <Grid container spacing={2}>
 
                     <div key={val.id}>
-                        <div className='staticImageFrame'>
-                            <div className='staticSingleFrame' >
+                            <Grid item xs={12} md={4}>
+                            <div className='staticImageFrame'>
+                                <div className='staticSingleFrame' >
 
-                                <div className='imgContainer'>
-                                    <img src={val.cover} alt='cover' className='imageContainer' />
-                                    <div className='product-like'>
-                                        <label>{count}</label> <br />
-                                        <i className='fa-regular fa-heart' onClick={increment}></i>
+                                    <div className='imgContainer'>
+                                        <img src={val.cover} alt='cover' className='imageContainer' />
+                                        <div className='product-like'>
+                                            <label>{count}</label> <br />
+                                            <i className='fa-regular fa-heart' onClick={increment}></i>
+                                        </div>
+
                                     </div>
 
-                                </div>
-
-                                <h5>{val.name.toUpperCase()}</h5>
-                                <p>${val.price}.00</p>
+                                    <h5>{val.name.toUpperCase()}</h5>
+                                    <p>${val.price}.00</p>
 
 
-                                <div className='product-details'>
-                                    <div className='rate'>
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                        <i className='fa fa-star'></i>
-                                    </div>
-                                    <div className='price'>
+                                    <div className='product-details'>
+                                        <div className='rate'>
+                                            <i className='fa fa-star'></i>
+                                            <i className='fa fa-star'></i>
+                                            <i className='fa fa-star'></i>
+                                            <i className='fa fa-star'></i>
+                                            <i className='fa fa-star'></i>
+                                        </div>
+                                        <div className='price'>
 
-                                        <button onClick={() =>
-                                            addToCart(val)
-                                        }>
-                                            <i className='fa fa-plus' ></i>
-                                        </button>
+                                            <button onClick={() =>
+                                                addToCart(val)
+                                            }>
+                                                <i className='fa fa-plus' ></i>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                    </div>
+                    </Grid >
+                        </div>
+                        </Grid>
                 )
             })}
 

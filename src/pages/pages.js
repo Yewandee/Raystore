@@ -5,6 +5,7 @@ import Wrapper from '../components/wrapper/wrapper'
 import Shops from '../components/shopp/shop'
 import Contact from '../components/contact/contact'
 import Cart from '../components/cart/cart'
+import Checkout from '../components/checkout/checkout'
 
 
 
@@ -32,6 +33,7 @@ const Pages = () => {
             <Wrapper />
             <Cart addToCart={addToCart} />
             <Contact />
+            {/* <Checkout /> */}
 
         </section>
     )

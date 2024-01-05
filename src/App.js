@@ -11,6 +11,7 @@ import Cart from './components/cart/cart.js';
 import Footer from './components/footer/footer';
 import Sdata from './components/shopp/sdata.js';
 import Data from './components/Data.js';
+import Checkout from './components/checkout/checkout.js';
 import { AddItemToCart, RemoveItemfromCart } from './redux/reducer.js';
 import { useDispatch } from 'react-redux';
 
@@ -33,6 +34,8 @@ function App() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<Cart   />} />
+          <Route path="/checkout" element={<Checkout  />} />
+
         </Routes>
       </Router>
 

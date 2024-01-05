@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import '../cart/cart.css'
 import { useDispatch, useSelector } from "react-redux";
-import { AddItemToCart, RemoveItemfromCart } from "../../redux/reducer";
+import { AddItemToCart, RemoveItemfromCart, DeleteItemfromCart } from "../../redux/reducer";
+import { NavLink, } from 'react-router-dom';
 
 
 
 
 const Cart = () => {
+  const [CartItems, setCartItems] = useState([]);
+
   const dispatch = useDispatch()
 
   const addToCart = (product) => {
@@ -15,17 +18,25 @@ const Cart = () => {
 
   const decreaseQty = (product) => {
     dispatch(RemoveItemfromCart(product));
-    console.log("Decreasing")
+    
   }
+
+  const handleDeleteFromCart = (product) => {
+    dispatch(DeleteItemfromCart(product))
+    console.log("Deleting")
+  };
+
+
   const CartItem = useSelector((state) => state.recipe.CartItem)
   const totalPrice = CartItem.reduce((total, { price, qty }) => {
-  
+
     const itemPrice = parseInt(price) || 0;
     const itemQty = qty || 0;
     return total + itemQty * itemPrice;
   }, 0);
 
   
+
 
 
 
@@ -56,11 +67,11 @@ const Cart = () => {
                     </h4>
                   </div>
                   <div className='cart-items-function'>
-                    <div className='removeCart'>
-                      <button className='removeCart'>
+                    {/* <div className='removeCart'>
+                      <button className='removeCart' onClick={() => handleDeleteFromCart(item.id)}>
                         <i className='fa-solid fa-xmark'></i>
                       </button>
-                    </div>
+                    </div> */}
 
                     <div className='cartControl d_flex'>
                       <button className='incCart' onClick={() => addToCart(item)}>
@@ -87,12 +98,13 @@ const Cart = () => {
             </div>
           </div>
 
-          
+
         </div>
         <div className="paybtn">
-         <a className="btn  py-3 px-5 mt-5" href='/'>Proceed to Checkout</a>
+          
+            <NavLink className="btn  py-3 px-5 mt-5" to='/checkout'>Proceed to Checkout</NavLink>
 
-          </div>
+        </div>
       </section>
     </>
   )
