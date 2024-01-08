@@ -52,16 +52,7 @@ const Payment = () => {
               <Grid item xs={12} >
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <Grid item xs={12} md={6}>
-                      <TextField
-                        required
-                        id="cardName"
-                        label="Name on card"
-                        fullWidth
-                        autoComplete="cc-name"
-                        variant="standard"
-                      />
-                    </Grid>
+                   
                     <Grid item xs={12} md={6}>
                       <TextField
                         required
@@ -90,6 +81,16 @@ const Payment = () => {
                         helperText="Last three digits on signature strip"
                         fullWidth
                         autoComplete="cc-csc"
+                        variant="standard"
+                      />
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <TextField
+                        required
+                        id="cardName"
+                        label="Name on card"
+                        fullWidth
+                        autoComplete="cc-name"
                         variant="standard"
                       />
                     </Grid>
