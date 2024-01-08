@@ -47,7 +47,7 @@ const Header = () => {
     return (
         <header>
 
-            <nav className="navbar sticky-top navbar-expand-lg bg-light d-flex justify-content-center ">
+            <nav className="navbar navs sticky-top navbar-expand-lg d-flex justify-content-center ">
                 <div className="container-fluid">
 
                     <NavLink className="navbar-brand" >
@@ -68,22 +68,30 @@ const Header = () => {
                                 </li>
 
                                 <li className="nav-item active">
-                                    <NavLink className="nav-link"  to='/about'>About</NavLink>
+                                    <NavLink className="nav-link" to='/about'>About</NavLink>
                                 </li>
 
                                 <li className="nav-item active">
-                                    <NavLink className="nav-link"  to='/contact'>Contact</NavLink>
+                                    <NavLink className="nav-link" to='/store'>Store</NavLink>
+                                </li>
+                                <li className="nav-item active">
+                                    <NavLink className="nav-link" to='/contact'>Contact</NavLink>
                                 </li>
 
-                                {!isLoggedIn &&<li className="nav-item">
+                                {/* {!isLoggedIn &&<li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleSignIn} to='/signin'>Sign In</NavLink>
-                                </li>}
+                                </li>} */}
                                 {/* {!isLoggedIn && <li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleSignOut} to='/signup'>Sign Up</NavLink>
                                 </li>}
                                */}
 
-                               {isLoggedIn && <li className="nav-item">
+                                <li className='nav-item active'>
+                                    <NavLink className="nav-link cart" to="/cart">Cart
+                                        {/* <i className='fa fa-shopping-bag icon-circle'></i>    */}
+                                    </NavLink>
+                                </li>
+                                {isLoggedIn && <li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleLogout}>Log Out</NavLink>
                                 </li>}
 

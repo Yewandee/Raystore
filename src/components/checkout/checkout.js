@@ -8,6 +8,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Review from './review';
+import Payment from './payment';
 
 
 
@@ -19,6 +20,8 @@ function getStepContent(step) {
             return <AddressForm />;
         case 1:
             return <Review />;
+        case 2:
+            return <Payment />;
         default:
             throw new Error('Unknown step');
     }
@@ -76,7 +79,7 @@ const Checkout = () => {
                         </Box>
                     </React.Fragment>
                 )}
-               
+
             </div>
         </section>
     )

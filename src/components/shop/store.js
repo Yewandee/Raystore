@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 
-const Shop = () => {
+const Store = () => {
     const settings = {
         dots: false,
         infinite: true,
@@ -40,4 +40,4 @@ const Shop = () => {
     )
 }
 
-export default Shop
+export default Store
