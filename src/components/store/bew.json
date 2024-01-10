@@ -1,0 +1,42 @@
+{
+  "requestSuccessful": true,
+  "responseData": {
+    "invoiceNumber": "000073",
+    "customer": {
+      "merchantCustomerId": "STARERE",
+      "customerLastName": "test",
+      "customerFirstName": "user",
+      "customerEmail": "string@gmail.com",
+      "customerPhoneNumber": "09087656765",
+      "customerAddress": "string",
+      "customerCity": "string",
+      "customerStateCode": "LA",
+      "customerPostalCode": "100210",
+      "customerCountryCode": "NG",
+      "merchantCode": "tes0000522",
+      "id": 1092538,
+      "isActive": true,
+      "createdDate": "2024-01-10T09:58:09.840187+01:00"
+    },
+    "amount": 1840000,
+    "dueDate": "2024-01-10",
+    "invoiceNote": "string",
+    "discountAmount": 0,
+    "discountType": "None",
+    "shippingCost": 0,
+    "subTotal": 1840000,
+    "tax": 0,
+    "taxType": "None",
+    "paymentUrl": "https://payment.pelpay.ng/pay?adviceReference=0d952a36-e1a8-48a3-8faa-3abfa1be7ef8",
+    "status": "Pending",
+    "paymentReference": "0d952a36-e1a8-48a3-8faa-3abfa1be7ef8",
+    "invoiceType": "OneTime",
+    "items": [
+      { "id": 129, "name": "Iphone 15", "quantity": 2, "amount": 120000 },
+      { "id": 130, "name": "Macbook Air", "quantity": 4, "amount": 400000 }
+    ],
+    "paymentHistories": []
+  },
+  "message": "Successful",
+  "responseCode": "00"
+}

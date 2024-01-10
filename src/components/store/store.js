@@ -1,5 +1,5 @@
 import React from 'react'
-import Sdata from './shopdata'
+import Sdata from './storedata'
 import './shop.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Slider from 'react-slick'

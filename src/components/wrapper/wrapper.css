@@ -41,6 +41,7 @@
     flex-wrap: wrap;
     grid-gap: 10px;
     transition: .5s;
+    
 }
 .icon-circle {
   width: 50px;

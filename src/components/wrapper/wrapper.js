@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
 import React from 'react'
-import WOW from "wow.js";
-// import {Animate} from 'animate.css-react'n
+import '../wrapper/wrapper.css'
+import WOW from "wowjs";
+
 
 const Wrapper = () => {
-    
+    useEffect(() => {
+        new WOW.WOW({
+          live: false
+        }).init();
+      }, []);
 
     const Wdata = [
         {
@@ -29,7 +35,7 @@ const Wrapper = () => {
     ]
     return (
         <div className='wrapper row'>
-            <div className='container grid2'>
+            <div className='container grid2 wow fadeInUp' data-wow-delay="0.5s">
                 {Wdata.map((val, value) => {
                     return (
                         <div className='prod  ' key={value}>

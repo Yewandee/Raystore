@@ -1,12 +1,21 @@
 import React from "react"
+import { useEffect } from "react";
 import '../footer/footer.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import WOW from "wowjs";
 
 const Footer = () => {
+
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, []);
+
   return (
     <>
       <footer>
-        <div className='container'>
+        <div className='container wow fadeIn' data-wow-delay="0.1s">
             <div className='row'>
             <div className='box col-lg-3 col-md-6'>
             <h1>RAYSTORE</h1>
