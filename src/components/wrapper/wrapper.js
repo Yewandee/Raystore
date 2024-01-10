@@ -1,7 +1,9 @@
 import React from 'react'
-import './wrapper.css'
+import WOW from "wow.js";
+// import {Animate} from 'animate.css-react'n
 
 const Wrapper = () => {
+    
 
     const Wdata = [
         {

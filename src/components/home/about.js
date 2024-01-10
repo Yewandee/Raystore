@@ -14,13 +14,13 @@ const About = () => {
 
             <div className="container-fluid py-5 my-5">
                 <div className="row align-">
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 fadeIn">
                         <div className="about-img">
                             <img src={img4} alt="About 1" srcset="" />
                             <img src={img5} alt="About 2" srcset="" />
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 about-text" >
+                    <div className="col-12 col-md-6 about-text fadeIn" >
                         <h4 className="section-title">ABOUT US</h4>
                         <h2>Your One Stop Store for all things Skincare</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in rem eos explicabo,
