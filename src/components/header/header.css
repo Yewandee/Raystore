@@ -16,14 +16,12 @@
 .navs{
   background-color:#B78D65 ;
 }
-.navbarr ul li{
+.navbarr ul .active{
   display: flex;
   font-size: 15px;
-  margin-left: 100px;
+  margin-left: 80px;
   list-style: none;
-  /* padding: 5px 5px; */
   position: relative;
-  /* justify-content: end; */
 }
 .nav-link{
   color: #ffffff;
@@ -46,4 +44,7 @@
   width: 80px;
   height: 40px;
   border-radius: 20px;
+}
+.shopping{
+  padding: 5px;
 }

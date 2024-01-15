@@ -74,11 +74,11 @@ const Header = () => {
                                 <li className="nav-item active">
                                     <NavLink className="nav-link  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" to='/store'>Store</NavLink>
 
-                                    <ul class="dropdown-menu dropdown-menu">
+                                    <ul class="dropdown-menu">
 
-                                        <li><a class="dropdown-item" href="/serums">Serums</a></li>
-                                        <li><a class="dropdown-item" href="#">Face Wash</a></li>
-                                        <li><a class="dropdown-item" href="#">Face Cream</a></li>
+                                        <li className='drop'><a class="dropdown-item" href="/serums">Serums</a></li>
+                                        <li className='drop'><a class="dropdown-item" href="#">Face Wash</a></li>
+                                        <li className='drop'><a class="dropdown-item" href="#">Face Cream</a></li>
                                     </ul>
                                 </li>
 
@@ -96,7 +96,7 @@ const Header = () => {
 
                                 <li className='nav-item active'>
                                     <NavLink className="nav-link cart" to="/cart">Cart
-                                        {/* <i className='fa fa-shopping-bag icon-circle'></i>    */}
+                                        <i className='fa fa-shopping-bag shopping' />
                                     </NavLink>
                                 </li>
                                 {isLoggedIn && <li className="nav-item">

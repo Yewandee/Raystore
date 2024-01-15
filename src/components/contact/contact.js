@@ -3,13 +3,13 @@ import React from 'react'
 const Contact = () => {
     return (
         <section className='contact mt-5 mb-5'>
-            <div className="container-fluid justify-content-center">
-                <div className="text-center mx-auto" style={{ maxWidth: '650px', fontWeight: 'bold' }}>
+            <div className="container-fluid justify-content-center " >
+                <div className="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '650px', fontWeight: 'bold' }}>
                     <h3 className="section-title">CONTACT US</h3>
                     <h1 className="mb-5">If You Have Any Query, Please Feel Free to Contact Us</h1>
                 </div>
                 <div className="row g-5">
-                    <div className="col-md-6 col-12 d-flex flex-column justify-content-between h-100">
+                    <div className="col-md-6 col-12 d-flex flex-column justify-content-between h-100 wow fadeInUp" data-wow-delay="0.1s">
 
                         <div className="col-12  bg-light d-flex align-items-center w-100 p-4 mb-4">
                             <div className="d-flex  align-items-center justify-content-center  bg-dark" style={{ width: '40px', height: '40px' }}>
@@ -43,7 +43,7 @@ const Contact = () => {
 
                     </div>
 
-                    <div className="col-md-6 col-12 text-left">
+                    <div className="col-md-6 col-12 text-left wow fadeInUp" data-wow-delay="0.5s">
                         <form className="row row-cols-md-auto g-3 align-self-center w-auto">
                             <div className="row g-3">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in rem eos explicabo,

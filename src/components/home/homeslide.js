@@ -41,8 +41,8 @@ const HomeSlide = () => {
                   style={{ objectFit: "cover", width: "100%", height: '100vh' }} />
 
                 <div className="slide-content">
-                  <h1 className="animated slideInDown">{value.title}</h1>
-                  <h3 className="animated slideInDown">{value.desc}</h3>
+                  <h1 className=" wow fadeInUp" data-wow-delay="0.6s" >{value.title}</h1>
+                  <h3 className="animated wow fadeInUp" data-wow-delay="0.9s">{value.desc}</h3>
                 </div>
               </div>
             </div>
