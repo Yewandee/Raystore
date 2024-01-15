@@ -1,0 +1,20 @@
+.serums{
+    width: 100%;
+}
+.serum-container{
+    
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 20px;
+    max-width: 100%;
+    background-color: bisque;
+}
+.serum{
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}

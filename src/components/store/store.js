@@ -1,6 +1,6 @@
 import React from 'react'
 import Sdata from './storedata'
-import './shop.css'
+import './serums.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
