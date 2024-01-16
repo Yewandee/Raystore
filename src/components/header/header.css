@@ -40,8 +40,8 @@
   display: flex;
 }
 .cart{
-  border: 2px solid black;
-  width: 80px;
+  border: 1px solid #ffffff;
+  width: 70px;
   height: 40px;
   border-radius: 20px;
 }

@@ -32,7 +32,13 @@ export const recipeReducer = createSlice({
             }
         },
         DeleteItemfromCart: (state, action) => {
-          
+            const updatedCart = state.CartItem.filter((item) => item.id !== action.payload.id);
+
+            return {
+                ...state,
+                CartItem: updatedCart,
+            };
+            
         }
 
     }

@@ -28,13 +28,13 @@ const Review = () => {
 
                     <ListItem key={product.name} sx={{ py: 1, px: 0 }}>
                         <ListItemText primary={product.name.charAt(0).toUpperCase() + product.name.slice(1)}  secondary={product.desc} />
-                        <Typography variant="body2">{product.price}</Typography>
+                        <Typography variant="body2">₦{product.price}</Typography>
                     </ListItem>
                 ))}
                 <ListItem sx={{ py: 1, px: 0 }}>
                     <ListItemText primary="Total" />
                     <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                        ${totalPrice}.00
+                    ₦{totalPrice}.00
                     </Typography>
                 </ListItem>
             </List>

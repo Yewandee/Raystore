@@ -84,7 +84,7 @@ const Shops = () => {
                                             </div>
 
                                             <h5>{val.name.toUpperCase()}</h5>
-                                            <p>${val.price}.00</p>
+                                            <p>₦{val.price}.00</p>
 
 
                                             <div className='product-details'>

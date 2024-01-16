@@ -1,7 +1,9 @@
+
 .cart-items {
   background: #f6f9fc;
   height: auto;
   padding: 50px 0;
+  justify-content: space-between;
 }
 
 .cart-items .cart-details {
@@ -117,6 +119,14 @@
   margin: auto;
 }
 .paybtn{
-  margin-left: 75%
+  margin-left: 70%
 }
-
+.btn{
+  background-color:#B78D65;
+  margin-right: 40%;
+  width: 250px;
+  height: 60px;
+  color: #fff;
+  font-size: 15px;
+  /* text-align: center; */
+}
