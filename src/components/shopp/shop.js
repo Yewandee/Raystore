@@ -64,7 +64,7 @@ const Shops = () => {
         <section className='shops wow fadeIn' data-wow-delay='0.5s'>
             <Slider {...settings}>
 
-                {SDataValue.map((val) => {
+                {SDataValue.map((val, value) => {
                     // console.log("val", val)
                     return (
                         <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>

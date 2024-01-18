@@ -29,7 +29,7 @@ const HomeSlide = () => {
 
     <>
       <Slider {...settings}>
-        {Hdata.map((value) => {
+        {Hdata.map((value, val) => {
           console.log("value", value)
           return (
             <div className='slider-item  wow fadeIn' data-wow-delay="0.3s" key={Hdata.id}>
@@ -49,7 +49,7 @@ const HomeSlide = () => {
           )
         })}
       </Slider>
-      {/* <About/> */}
+  
     </>
   )
 }
