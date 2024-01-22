@@ -1,20 +1,23 @@
-.serums{
-    width: 100%;
+.serums {
+  width: 100%;
 }
-.serum-container{
-    
-    height: 200px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 0 20px;
-    max-width: 100%;
-    background-color: bisque;
+.serum-container {
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 20px;
+  max-width: 100%;
 }
-.serum{
-    width: 80px;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
+.serum {
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.rate {
+  font-size: 15px;
+  color: #ffcd4e;
+  margin: 5px 5px 5px 0;
 }
