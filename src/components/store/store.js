@@ -17,10 +17,12 @@ const Store = () => {
         autoplay: true,
     }
 
+    const SDataValue = Sdata.shopItems
+
     return (
         <div className='product'>
             <Slider {...settings}>
-                {Sdata.map((val) => {
+                {SDataValue.map((val) => {
                     console.log("val", val)
                     return (
                         <div className='staticImageFrame'>

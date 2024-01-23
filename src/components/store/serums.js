@@ -28,6 +28,8 @@ const Serums = () => {
     color: theme.palette.text.secondary,
   }));
 
+  const SDataValue = Sdata.shopItems
+
   return (
 
     <section className="serums">
@@ -35,7 +37,7 @@ const Serums = () => {
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={{ xs: 4, md: 4 }} >
-          {Sdata.map((val, value) => (
+          {SDataValue.map((val, value) => (
 
             <Grid item xs={4} sm={4} md={4} key={value}>
               <Item>
