@@ -6,6 +6,7 @@ import Shops from '../components/shopp/shop'
 import Contact from '../components/contact/contact'
 import Cart from '../components/cart/cart'
 import Checkout from '../components/checkout/checkout'
+import Features from '../components/features/features'
 
 
 
@@ -32,6 +33,7 @@ const Pages = () => {
             <Shops />
             <Wrapper />
             <Cart addToCart={addToCart} />
+            <Features/>
             <Contact />
             {/* <Checkout /> */}
 
