@@ -2,14 +2,9 @@
     display: flex;
     margin-bottom: 50px;
     padding: 50px;
-    justify-content: space-between
+    justify-content: space-between;
+
 }
-/* .cardd{
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-} */
 .image{
     width: 200px;
     height: 200px;

@@ -15,7 +15,7 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 
 const Serums = () => {
   const dispatch = useDispatch()
-  const [count, setCount] = useState(0)
+  
 
   const addToCart = (product) => {
     dispatch(AddItemToCart(product))
