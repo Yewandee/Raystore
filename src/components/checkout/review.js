@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 // import '../checkout/checkout.css'
 import Grid from '@mui/material/Grid';
 
-const Review = () => {
+const Review = ({formData}) => {
     const addresses = ['8 Crystal palace', 'Victoria Island', 'Lagos', '99999', 'Nigeria'];
 
     const CartItem = useSelector((state) => state.recipe.CartItem)
@@ -43,7 +43,7 @@ const Review = () => {
                     <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
                         Shipping
                     </Typography>
-                    <Typography gutterBottom>Yewande Biobaku</Typography>
+                    <Typography gutterBottom>{formData.firstNmae} {formData.lastNmae} Yewande Biobaku</Typography>
                     <Typography gutterBottom>{addresses.join(', ')}</Typography>
                 </Grid>
                 {/* <Grid item container direction="column" xs={12} sm={6}>

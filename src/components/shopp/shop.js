@@ -39,9 +39,9 @@ const Shops = () => {
         setCount(count + 1)
     }
 
-    const [CartItem, setCartItem] = useState([])
+    // const [CartItem, setCartItem] = useState([])
 
-    console.log(`Cart==>`, CartItem)
+    // console.log(`Cart==>`, CartItem)
 
     const addToCart = (product) => {
         dispatch(AddItemToCart(product))

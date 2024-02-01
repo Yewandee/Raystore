@@ -14,7 +14,8 @@ const Sdata = {
             name: "soft care",
             price: "6000",
             discount: "10",
-            qty: 1
+            qty: 1,
+            pageUrl: '/serums'
         },
         {
             id: 5,
@@ -22,7 +23,8 @@ const Sdata = {
             name: "moisturizer",
             price: "4000",
             discount: "10",
-            qty: 1
+            qty: 1,
+            pageUrl: '/serums'
         },
         {
             id: 6,
@@ -30,7 +32,8 @@ const Sdata = {
             name: "face wash",
             price: "4000",
             discount: "10",
-            qty: 1
+            qty: 1,
+            pageUrl: '/serums'
         },
         {
             id: 7,
@@ -38,7 +41,8 @@ const Sdata = {
             name: "gentle wash",
             price: "5000",
             discount: "10",
-            qty: 1
+            qty: 1,
+            pageUrl: '/serums'
         },
         {
             id: 8,
@@ -46,7 +50,9 @@ const Sdata = {
             name: "kojic",
             price: "6000",
             discount: "10",
-            qty: 1
+            qty: 1,
+            pageUrl: '/serums'
+
         },
         {
             id: 9,
@@ -54,7 +60,8 @@ const Sdata = {
             name: "serum",
             price: "4500",
             discount: "10",
-            qty: 1
+            qty: 1,
+            pageUrl: '/serums'
         },
         {
             id: 10,
@@ -62,7 +69,8 @@ const Sdata = {
             name: "nivea cream",
             price: "2500",
             discount: "10",
-            qty: 1
+            qty: 1,
+            pageUrl: '/serums'
         },
     ]
 }
