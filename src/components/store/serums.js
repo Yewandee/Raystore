@@ -8,12 +8,14 @@ import Grid from '@mui/material/Grid';
 import Sdata from "./storedata";
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
-import { useDispatch } from 'react-redux'
-import { AddItemToCart } from '../../redux/reducer'
+import { useDispatch } from 'react-redux';
+import { AddItemToCart } from '../../redux/reducer';
+import { useSelector } from "react-redux";
 import { experimentalStyled as styled } from '@mui/material/styles';
 
-
 const Serums = () => {
+  const CartItem = useSelector((state) => state.recipe.CartItem)
+
   const dispatch = useDispatch()
   
 
