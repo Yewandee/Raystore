@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import '../checkout/checkout.css';
 import AddressForm from './addressForm';
 import Box from '@mui/material/Box';
@@ -15,7 +15,7 @@ import Payment from './payment';
 
 const steps = ['Shipping address', 'Review your order', 'Payment Details'];
 // function getStepContent(step) {
-    
+
 
 //     switch (step) {
 //         case 0:
@@ -31,16 +31,16 @@ const steps = ['Shipping address', 'Review your order', 'Payment Details'];
 const Checkout = () => {
     const [activeStep, setActiveStep] = React.useState(0);
 
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        address: '',
-        addressTwo: '',
-        city: '',
-        state: '',
-        postal: '',
-        country: '',
-      });
+    // const [formData, setFormData] = useState({
+    //     firstName: '',
+    //     lastName: '',
+    //     address: '',
+    //     addressTwo: '',
+    //     city: '',
+    //     state: '',
+    //     postal: '',
+    //     country: '',
+    // });
 
     const handleNext = () => {
         setActiveStep(activeStep + 1);
@@ -50,18 +50,29 @@ const Checkout = () => {
         setActiveStep(activeStep - 1);
     };
 
+    
+
+    const [submittedData, setSubmittedData] = useState("");
+
+    const handleFormSubmit = (formData) => {
+        setSubmittedData(formData);
+    };
+
+
     const getStepContent = (step) => {
+
         switch (step) {
-          case 0:
-            return <AddressForm setFormData={setFormData} />;
-          case 1:
-            return <Review formData={formData} />;
-          case 2:
-            return <Payment />;
-          default:
-            throw new Error('Unknown step');
+            case 0:
+                return <AddressForm onSubmit= {handleFormSubmit} />;
+            case 1:
+                return <Review formData={submittedData} />;
+               
+            case 2:
+                return <Payment />;
+            default:
+                throw new Error('Unknown step');
         }
-      };
+    };
 
     return (
         <section className='checkout'>

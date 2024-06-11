@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Form from 'react-bootstrap/Form';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import './search.css'
 import Sdata from '../shopp/sdata';
 import Accordion from '@mui/material/Accordion';
@@ -21,6 +21,17 @@ const Search = () => {
     const filterResults = (name) => {
         return resultss.filter(result => result.name.toLowerCase().includes(name.toLowerCase()));
     };
+
+    // Get the search results
+
+    // const [searchParams, setSearchParams] = useSearchParams();
+
+    // useEffect ( () => {
+    //     setSearchParams ({
+    //         results:  Sdata.shopItems        })
+    // })
+
+    // console.log(searchParams.get("results"))
 
     const handleSearch = (e) => {
         const value = e.target.value;

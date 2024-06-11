@@ -4,6 +4,7 @@ import '../header/header.css'
 import { useState } from 'react';
 import { NavLink, } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
+
 import Search from './search';
 
 
@@ -75,7 +76,6 @@ const Header = () => {
                                     <NavLink className="nav-link  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" to='/store'>Store</NavLink>
 
                                     <ul class="dropdown-menu">
-
                                         <li className='drop'><a class="dropdown-item" href="/serums">Serums</a></li>
                                         <li className='drop'><a class="dropdown-item" href="#">Face Wash</a></li>
                                         <li className='drop'><a class="dropdown-item" href="#">Face Cream</a></li>

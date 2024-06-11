@@ -10,7 +10,7 @@ import Grid from '@mui/material/Grid';
 
 const Review = ({ formData }) => {
     
-    console.log(`form-data: ${formData}`);
+    console.log(`form-dataa: ${formData}`);
 
     
     // const addresses = ['8 Crystal palace', 'Victoria Island', 'Lagos', '99999', 'Nigeria'];
@@ -48,10 +48,12 @@ const Review = ({ formData }) => {
                     <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
                         Shipping
                     </Typography>
-                    <Typography gutterBottom>{formData.firstName} {formData.lastName} </Typography>
+                    <Typography gutterBottom>{formData?.firstName} {formData?.lastName} </Typography>
                     <Typography gutterBottom>{formData.address} {formData.addressTwo} {formData.city} {formData.state}
                         {formData.postal} {formData.country} </Typography>
                 </Grid>
+
+                
                 {/* <Grid item container direction="column" xs={12} sm={6}>
                     <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
                         Payment details
