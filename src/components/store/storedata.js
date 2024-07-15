@@ -21,6 +21,7 @@ const Sdata = {
         name: "Moisturizer",
         price: "4000",
         discount: "10",
+        qty: "1",
     },
     {
         id: 6,

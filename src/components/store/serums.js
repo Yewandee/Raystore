@@ -21,6 +21,7 @@ const Serums = () => {
 
   const addToCart = (product) => {
     dispatch(AddItemToCart(product))
+    console.log(`products clicked`,product)
   }
 
   const SDataValue = Sdata.shopItems

@@ -53,6 +53,8 @@ const Cart = () => {
             {CartItem.map((item) => {
               const productQty = item.price * item.qty
 
+              console.log(`price`,item.price, `qty`, item.qty)
+
               return (
                 <div className='cart-list d_flex' key={item.id}>
                   <div className='img'>
