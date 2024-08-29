@@ -86,9 +86,9 @@ const Header = () => {
                                     <NavLink className="nav-link" to='/contact'>Contact</NavLink>
                                 </li>
 
-                                {!isLoggedIn &&<li className="nav-item">
+                                {/* {!isLoggedIn &&<li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleSignIn} to='/signin'>Sign In</NavLink>
-                                </li>}
+                                </li>} */}
                                 {/* {!isLoggedIn && <li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleSignOut} to='/signup'>Sign Up</NavLink>
                                 </li>}
@@ -99,9 +99,9 @@ const Header = () => {
                                         <i className='fa fa-shopping-bag shopping' />
                                     </NavLink>
                                 </li>
-                                {isLoggedIn && <li className="nav-item">
+                                {/* {isLoggedIn && <li className="nav-item">
                                     <NavLink className="nav-link" onClick={handleLogout}>Log Out</NavLink>
-                                </li>}
+                                </li>} */}
 
                             </ul>
 

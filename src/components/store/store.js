@@ -29,7 +29,6 @@ const Store = () => {
                             <div className='staticSingleFrame' key={val.id}>
                                 <div className='imgContainer'>
                                     <img src={val.cover} alt='cover' className='imageContainer' />
-                                    {/* <img src={val.cover} alt='' style={{ width: '80px', height: '80px' }} /> */}
                                 </div>
                                 <h4>{val.name}</h4>
                                 <span>${val.price}</span>

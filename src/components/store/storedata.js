@@ -14,6 +14,7 @@ const Sdata = {
         name: "Soft Care",
         price: "6000",
         discount: "10",
+        qty: "1",
     },
     {
         id: 5,
@@ -29,6 +30,7 @@ const Sdata = {
         name: "Face Wash",
         price: "4000",
         discount: "10",
+        qty: "1",
     },
     {
         id: 7,
@@ -36,6 +38,7 @@ const Sdata = {
         name: "Gentle Wash",
         price: "5000",
         discount: "10",
+        qty: "1",
     },
     {
         id: 8,
@@ -43,6 +46,7 @@ const Sdata = {
         name: "Hydraucloric Acid",
         price: "6000",
         discount: "10",
+        qty: "1",
     },
     {
         id: 9,
@@ -50,6 +54,7 @@ const Sdata = {
         name: "Serum",
         price: "4500",
         discount: "10",
+        qty: "1",
     },
     // {
     //     id: 10,

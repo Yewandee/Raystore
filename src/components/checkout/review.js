@@ -12,8 +12,7 @@ const Review = ({ formData }) => {
     
     console.log(`form-dataa: ${formData}`);
 
-    
-    // const addresses = ['8 Crystal palace', 'Victoria Island', 'Lagos', '99999', 'Nigeria'];
+
 
     const CartItem = useSelector((state) => state.recipe.CartItem)
     const totalPrice = CartItem.reduce((total, { price, qty }) => {

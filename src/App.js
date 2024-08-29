@@ -15,6 +15,7 @@ import Checkout from './components/checkout/checkout.js';
 import { AddItemToCart, RemoveItemfromCart } from './redux/reducer.js';
 import { useDispatch } from 'react-redux';
 import Serums from './components/store/serums.js';
+import Products from './components/axios/products.js';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/cart" element={<Cart   />} />
           <Route path="/checkout" element={<Checkout  />} />
           <Route path="/serums" element={<Serums  />} />
+          <Route path="/face-serums" elements ={<Products/>} />
   
 
         </Routes>

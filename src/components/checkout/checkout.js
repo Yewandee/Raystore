@@ -10,37 +10,16 @@ import Typography from '@mui/material/Typography';
 import Review from './review';
 import Payment from './payment';
 
+import Congratulations from "../../assets/images/congratulations.jpg"
+import { Link } from 'react-router-dom';
+
 
 
 
 const steps = ['Shipping address', 'Review your order', 'Payment Details'];
-// function getStepContent(step) {
 
-
-//     switch (step) {
-//         case 0:
-//             return <AddressForm setFormData={setFormData}/>;
-//         case 1:
-//             return <Review formData={formData}/>;
-//         case 2:
-//             return <Payment />;
-//         default:
-//             throw new Error('Unknown step');
-//     }
-// }
 const Checkout = () => {
     const [activeStep, setActiveStep] = React.useState(0);
-
-    // const [formData, setFormData] = useState({
-    //     firstName: '',
-    //     lastName: '',
-    //     address: '',
-    //     addressTwo: '',
-    //     city: '',
-    //     state: '',
-    //     postal: '',
-    //     country: '',
-    // });
 
     const handleNext = () => {
         setActiveStep(activeStep + 1);
@@ -50,7 +29,7 @@ const Checkout = () => {
         setActiveStep(activeStep - 1);
     };
 
-    
+
 
     const [submittedData, setSubmittedData] = useState("");
 
@@ -63,10 +42,10 @@ const Checkout = () => {
 
         switch (step) {
             case 0:
-                return <AddressForm onSubmit= {handleFormSubmit} />;
+                return <AddressForm onSubmit={handleFormSubmit} />;
             case 1:
                 return <Review formData={submittedData} />;
-               
+
             case 2:
                 return <Payment />;
             default:
@@ -90,12 +69,18 @@ const Checkout = () => {
                         <Typography variant="h5" gutterBottom>
                             Thank you for your order.
                         </Typography>
-                        <Typography variant="subtitle1">
-                            Your order number is #2001539. We have emailed your order
-                            confirmation, and will send you an update when your order has
-                            shipped.
-                        </Typography>
+                        <div className='d-flex justify-content-center mt-5'>
+                            <img src={Congratulations} className='w-50 ' />
+                        </div>
+                        <Link to="/">
+                            <Button
+                                variant="contained"
+                                sx={{ mt: 3, ml: 1 }}
+                            >HOME</Button>
+                        </Link>
+
                     </React.Fragment>
+
                 ) : (
                     <React.Fragment>
                         {getStepContent(activeStep)}
@@ -113,6 +98,8 @@ const Checkout = () => {
                             >
                                 {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
                             </Button>
+
+
                         </Box>
                     </React.Fragment>
                 )}
