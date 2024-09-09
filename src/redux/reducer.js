@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const recipeReducer = createSlice({
-    name: "user",
+    name: "recipe",
     initialState: {
         mode: "light",
         CartItem: [],
@@ -38,9 +38,8 @@ export const recipeReducer = createSlice({
                 ...state,
                 CartItem: updatedCart,
             };
-            
-        }
 
+        }
     }
 })
 
@@ -52,3 +51,5 @@ export const {
 } = recipeReducer.actions;
 
 export default recipeReducer.reducer;
+
+export const selectCartItemCount = (state) => state.recipe.CartItem.reduce((total, item) => total + (item.qty || 0), 0);

@@ -11,3 +11,11 @@
     border: 1px solid black;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .containerr{
+        display: grid;
+        grid-template-columns: 4fr;
+    }
+    
+}

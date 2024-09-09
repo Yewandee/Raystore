@@ -70,4 +70,20 @@ h6,
 }
 .btn{
     background-color:#B78D65;
+    border: none;
+}
+.btn:hover{
+    background-color: #B78D65;
+    color: #252525;
+    
+}
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .about-imgt{
+        margin-bottom: 50px;
+    }
+    
 }

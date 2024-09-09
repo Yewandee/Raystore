@@ -1,11 +1,14 @@
-:root{
-    --light: #F8F8F8;
-    --dark: #252525;
+:root {
+  --light: #F8F8F8;
+  --dark: #252525;
 }
+
 .wrapper {
   text-align: center;
   margin-bottom: 50px;
+  padding: 0 15px; 
 }
+
 .prod {
   background: #fff;
   padding: 20px;
@@ -13,8 +16,9 @@
   border-radius: 8px;
   box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
   margin: 10px;
-  
+  transition: background-color 0.5s;
 }
+
 .wrapper .img {
   margin: auto;
   width: 70px;
@@ -22,27 +26,30 @@
   line-height: 70px;
   margin-bottom: 20px;
 }
+
 .wrapper .img i {
   font-size: 25px;
 }
+
 .wrapper .prod h3 {
   font-weight: 500;
   color: #000000;
 }
+
 .wrapper p {
   font-size: 15px;
   margin-top: 20px;
   color: #000000;
 }
+
 .grid2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    display: flexbox;
-    flex-wrap: wrap;
-    grid-gap: 10px;
-    transition: .5s;
-    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  transition: .5s;
 }
+
+
 .icon-circle {
   width: 50px;
   height: 50px;
@@ -55,14 +62,72 @@
 
 
 .prod:hover {
-    background-color: var(--dark);
-    transition: .5s;
-    
+  background-color: var(--dark);
 }
-.prod:hover h3{
-    color: var(--light);
-}
-.prod:hover p{
+
+.prod:hover h3 {
   color: var(--light);
- 
+}
+
+.prod:hover p {
+  color: var(--light);
+}
+
+
+@media (max-width: 1200px) {
+  .grid2 {
+      grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 768px) {
+  .grid2 {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .wrapper .img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .wrapper .img i {
+      font-size: 20px;
+  }
+
+  .wrapper .prod h3 {
+      font-size: 16px;
+  }
+
+  .wrapper p {
+      font-size: 14px;
+      margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid2 {
+      grid-template-columns: 1fr;
+  }
+
+  .wrapper {
+      padding: 0 10px; 
+  }
+
+  .wrapper .img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .wrapper .img i {
+      font-size: 18px;
+  }
+
+  .wrapper .prod h3 {
+      font-size: 14px;
+  }
+
+  .wrapper p {
+      font-size: 12px;
+      margin-top: 10px;
+  }
 }

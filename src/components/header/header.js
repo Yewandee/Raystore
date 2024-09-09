@@ -4,46 +4,20 @@ import '../header/header.css'
 import { useState } from 'react';
 import { NavLink, } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
-
+import { useSelector } from 'react-redux'; 
+import { selectCartItemCount } from '../../redux/reducer';
 import Search from './search';
-
-
-
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    const handleSignIn = () => {
-        setIsLoggedIn(true);
-    };
-    const handleSignOut = () => {
-        setIsLoggedIn(false);
-    };
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const handleLogout = () => {
-        localStorage.clear();
-        sessionStorage.clear();
 
-        window.location.href = '/signin';
-    };
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const navLinks = document.querySelectorAll(".nav-link");
-        for (const link of navLinks) {
-            link.addEventListener("click", function () {
-                const navbarToggler = document.querySelector(".navbar-toggler");
-                if (navbarToggler.style.display !== "none") {
-                    navbarToggler.click();
-                }
-            });
-        }
-    });
-
+    const cartItemCount = useSelector(selectCartItemCount);
 
     return (
         <header>
@@ -77,8 +51,8 @@ const Header = () => {
 
                                     <ul class="dropdown-menu">
                                         <li className='drop'><a class="dropdown-item" href="/serums">Serums</a></li>
-                                        <li className='drop'><a class="dropdown-item" href="#">Face Wash</a></li>
-                                        <li className='drop'><a class="dropdown-item" href="#">Face Cream</a></li>
+                                        <li className='drop'><a class="dropdown-item" href="/">Face Wash</a></li>
+                                        <li className='drop'><a class="dropdown-item" href="/">Face Cream</a></li>
                                     </ul>
                                 </li>
 
@@ -86,22 +60,15 @@ const Header = () => {
                                     <NavLink className="nav-link" to='/contact'>Contact</NavLink>
                                 </li>
 
-                                {/* {!isLoggedIn &&<li className="nav-item">
-                                    <NavLink className="nav-link" onClick={handleSignIn} to='/signin'>Sign In</NavLink>
-                                </li>} */}
-                                {/* {!isLoggedIn && <li className="nav-item">
-                                    <NavLink className="nav-link" onClick={handleSignOut} to='/signup'>Sign Up</NavLink>
-                                </li>}
-                               */}
-
                                 <li className='nav-item active'>
                                     <NavLink className="nav-link cart" to="/cart">Cart
                                         <i className='fa fa-shopping-bag shopping' />
+                                        {cartItemCount > 0 && (
+                                            <span className="cart-count">{cartItemCount}</span>
+                                        )}
                                     </NavLink>
                                 </li>
-                                {/* {isLoggedIn && <li className="nav-item">
-                                    <NavLink className="nav-link" onClick={handleLogout}>Log Out</NavLink>
-                                </li>} */}
+
 
                             </ul>
 

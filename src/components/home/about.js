@@ -13,9 +13,9 @@ import img5 from "../../assets/images/img5.jpg";
 const About = () => {
     useEffect(() => {
         new WOW.WOW({
-          live: false
+            live: false
         }).init();
-      }, []);
+    }, []);
 
 
     return (
@@ -41,14 +41,18 @@ const About = () => {
                             Ex minus eius iure repellendus eveniet! Inventore, molestias eaque?
                         </p>
 
-                
-                        <a className="btn  py-3 px-5 " href="/">Shop Now</a>
+                        <a href="/">
+                            <button className="btn">
+                                Shop Now
+                            </button>
+                        </a>
+
                     </div>
                 </div>
             </div>
-           
+
         </div>
-        
+
     )
 }
 

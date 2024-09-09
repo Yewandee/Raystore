@@ -1,56 +1,54 @@
+
 .product {
   padding: 20px;
   position: relative;
   border-radius: 8px;
-  /* box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px; */
   margin: 10px;
+  max-width: 100%;
 }
+
 .staticImageFrame {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
-  margin: 0 20px;
-  max-width: 100%;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .imgContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .imageContainer {
   width: 100px;
   height: 100px;
 }
-.staticImageFrame h5 {
+
+.staticSingleFrame h5 {
   text-align: center;
-  font: 15px;
-}
-.staticImageFrame p {
-  text-align: center;
-  font: 10px;
+  font-size: 14px;
 }
 
-.product h3 {
-  font-weight: 400;
-  font-size: 17px;
+.staticSingleFrame p {
+  text-align: center;
+  font-size: 12px;
 }
 
 .product .rate i {
-  font-size: 15px;
+  font-size: 14px;
   color: #ffcd4e;
-  margin: 5px 5px 5px 0;
+  margin: 5px 1px;
 }
 
 .price button {
   background: none;
   color: #e94560;
-  font-size: 20px;
-  transition: 0.5s;
-  border: 1px solid rgb(3 0 71 / 9%);
+  font-size: 18px;
+  transition: 0.3s;
+  border: 1px solid rgba(3, 0, 71, 0.09);
   width: 35px;
   height: 35px;
   border-radius: 5px;
@@ -61,27 +59,65 @@
   background-color: #e94560;
   color: #fff;
 }
+
 .staticSingleFrame {
   background-color: #fff;
-  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
-}
-.product-like {
-  top: 0;
-  right: 0;
-  margin: 10px;
-  opacity: 0;
-  transition: 0.5s;
+  box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+  padding: 30px;
 }
 
-.product-like i {
-  font-size: 20px;
-  margin: 10px 3px;
+.product-like {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .product:hover .product-like {
   opacity: 1;
 }
-.product-details {
-  align-items: center;
-  justify-content: center;
+
+
+@media (max-width: 768px) {
+  .product {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .imgContainer {
+    justify-content: center;
+  }
+
+  .staticImageFrame h5 {
+    font-size: 12px;
+  }
+
+  .staticImageFrame p {
+    font-size: 10px;
+  }
+
+  .price button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imgContainer {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .staticImageFrame h5 {
+    font-size: 10px;
+  }
+
+  .staticImageFrame p {
+    font-size: 8px;
+  }
 }

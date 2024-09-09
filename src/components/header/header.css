@@ -19,7 +19,7 @@
 .navbarr ul .active{
   display: flex;
   font-size: 15px;
-  margin-left: 80px;
+  padding-left: 100px;
   list-style: none;
   position: relative;
 }
@@ -47,4 +47,8 @@
 }
 .shopping{
   padding: 5px;
+}
+.cart-count{
+  position: absolute;
+  top: 0;
 }
