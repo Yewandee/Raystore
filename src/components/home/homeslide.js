@@ -30,14 +30,14 @@ const HomeSlide = () => {
     <>
       <Slider {...settings}>
         {Hdata.map((value, val) => {
-          console.log("value", value)
+          
           return (
             <div className='slider-item  wow fadeIn' data-wow-delay="0.3s" key={Hdata.id}>
-              <div className='img'>
+              <div className='images'>
 
                 <img
                   src={value.cover}
-                  alt='Image'
+                  alt='Images'
                   style={{ objectFit: "cover", width: "100%", height: '100vh' }} />
 
                 <div className="slide-content">

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import '../cart/cart.css'
+import React from "react";
+import './cart.css'
 import { useDispatch, useSelector } from "react-redux";
 import { AddItemToCart, RemoveItemfromCart, DeleteItemfromCart } from "../../redux/reducer";
 import { NavLink, } from 'react-router-dom';
@@ -8,7 +8,6 @@ import { NavLink, } from 'react-router-dom';
 
 
 const Cart = () => {
-  const [CartItems, setCartItems] = useState([]);
 
   const dispatch = useDispatch()
 
@@ -23,7 +22,7 @@ const Cart = () => {
 
   const handleDeleteFromCart = (product) => {
     dispatch(DeleteItemfromCart(product))
-    console.log("Deleting")
+    // console.log("Deleting")
   };
 
 
@@ -43,7 +42,7 @@ const Cart = () => {
   return (
     <>
       <section className='cart-items mb-5'>
-        <div className='container d_flex'>
+        <div className='container'>
 
 
           <div className='cart-details'>
@@ -53,15 +52,15 @@ const Cart = () => {
             {CartItem.map((item) => {
               const productQty = item.price * item.qty
 
-              console.log(`price`,item.price, `qty`, item.qty)
+              // console.log(`price`,item.price, `qty`, item.qty)
 
               return (
                 <div className='cart-list d_flex' key={item.id}>
-                  <div className='img'>
-                    <img src={item.cover} alt='' />
+                  <div className='cart-image'>
+                    <img src={item.cover} alt='Cart Image' />
                   </div>
                   <div className='cart-details'>
-                    <h3>{item.name}</h3>
+                  <h3 className="capitalize">{item.name}</h3>
                     <h4>
                       ₦{item.price}.00 * {+item.qty} <span>₦{productQty}.00</span>
                     </h4>

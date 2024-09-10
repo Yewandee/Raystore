@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../checkout/checkout.css';
+import './checkout.css';
 import AddressForm from './addressForm';
 import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
@@ -60,7 +60,7 @@ const Checkout = () => {
                 <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
                     {steps.map((label) => (
                         <Step key={label}>
-                            <StepLabel>{label}</StepLabel>
+                            <StepLabel className='Checkout-labels'>{label}</StepLabel>
                         </Step>
                     ))}
                 </Stepper>

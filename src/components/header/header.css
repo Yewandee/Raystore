@@ -1,22 +1,10 @@
 :root {
   --primary: #B78D65;
-  --light: #F8F8F8;
-  --dark: #252525;
 }
-
-.light {
-  --bg-color: white;
-  --text-color: black;
+.navs {
+  background-color: var(--primary);
 }
-
-.dark {
-  --bg-color: black;
-  --text-color: white;
-}
-.navs{
-  background-color:#B78D65 ;
-}
-.navbarr ul .active{
+.navbarr .nav-item{
   display: flex;
   font-size: 15px;
   padding-left: 100px;
@@ -30,6 +18,10 @@
   margin-left: 30px;
   color: #ffffff;
 }
+.navbar-toggler {
+  border: none; 
+}
+
 .c_flex {
   display: flex;
   justify-content: space-between;
@@ -48,7 +40,36 @@
 .shopping{
   padding: 5px;
 }
-.cart-count{
+.cart-count {
   position: absolute;
   top: 0;
+  right: 0;
+  background-color: #ff0000; 
+  color: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .navbarr ul .active {
+    padding: 10px 0;
+    font-size: 14px; 
+    justify-content: center;
+  }
+  .navbar-brand {
+    font-size: 20px; 
+  }
+  .navbar-toggler {
+    border: none; 
+  }
+  .cart-count {
+    width: 18px;
+    height: 18px; 
+    font-size: 10px; 
+  }
 }

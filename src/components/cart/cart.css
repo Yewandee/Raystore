@@ -1,16 +1,17 @@
-
 .cart-items {
   background: #f6f9fc;
   height: auto;
   padding: 50px 0;
   justify-content: space-between;
 }
-
-.cart-items .cart-details {
+.cart-items > .container {
+  display: flex;
+}
+.cart-details {
   width: 70%;
 }
 
-.cart-items .cart-total {
+.cart-total {
   width: 30%;
   margin-top: 30px;
   margin-left: 30px;
@@ -20,7 +21,7 @@
   background: white;
   margin-top: 40px;
 }
-.cart-items .img {
+.cart-image {
   width: 150px;
   height: 150px;
 }
@@ -33,6 +34,7 @@
   font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
+  text-transform: capitalize;
 }
 .cart-items .cart-details h4 {
   font-size: 15px;
@@ -41,7 +43,7 @@
   color: white;
 }
 .cart-items h4 span {
-  color: #B78D65;
+  color: #b78d65;
   margin-left: 20px;
   font-weight: 500;
 }
@@ -64,7 +66,7 @@
 .incCart {
   background: none;
   border: 1px solid rgb(3 0 71 / 9%);
-  color: #B78D65;
+  color: #b78d65;
 }
 .desCart {
   background: #f6f9fc;
@@ -74,7 +76,7 @@
   margin-bottom: 20px;
   border-bottom: 1px solid rgb(3 0 71 / 9%);
   padding-bottom: 10px;
-  color: #B78D65;
+  color: #b78d65;
 }
 .cart-total .d_flex h4 {
   font-size: 15px;
@@ -83,14 +85,14 @@
 .cart-total .d_flex h3 {
   font-size: 20px;
   font-weight: 500;
-  color: #B78D65;
+  color: #b78d65;
 }
 .no-items {
-  color: #B78D65;
+  color: #b78d65;
   font-size: 18px;
   margin-top: 50px;
   height: 130px;
-  background: #fff ;
+  background: #fff;
   padding: 20px;
   position: relative;
   border-radius: 8px;
@@ -98,7 +100,6 @@
   margin: 10px;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .d_flex {
@@ -118,15 +119,48 @@
   max-width: 90%;
   margin: auto;
 }
-.paybtn{
-  margin-left: 70%
+.paybtn {
+  margin-left: 70%;
 }
-.btn{
-  background-color:#B78D65;
+.btn {
+  background-color: #b78d65;
   margin-right: 40%;
   width: 250px;
   height: 60px;
   color: #fff;
   font-size: 15px;
-  /* text-align: center; */
+}
+
+@media (max-width: 768px) {
+  .cart-items > .container {
+    display: block;
+  }
+  .cart-details{
+    width: 100%;
+  }
+  .cart-total {
+    width: 300px;
+  }
+
+ .cart-image img{
+  width: 50px;
+ }
+
+  .cart-items .cart-details {
+    margin-bottom: 20px;
+  }
+
+  .cartControl button {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .paybtn {
+    margin: 20px auto;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }

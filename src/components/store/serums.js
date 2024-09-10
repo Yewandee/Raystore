@@ -1,7 +1,4 @@
 import React from "react"
-import axios from "axios"
-import { useState, useEffect } from "react"
-// import Shop from "./shop"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./serum.css"
 import Grid from '@mui/material/Grid';
@@ -42,10 +39,10 @@ const Serums = () => {
 
 
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={{ xs: 4, md: 4 }} >
+        <Grid container spacing={{xs: 2, sm: 3, md: 4}} >
           {SDataValue.map((val, value) => (
 
-            <Grid item xs={4} sm={4} md={4} key={value}>
+            <Grid item xs={12} sm={6} md={4} key={value}>
               <Item>
                 <div className="serum-container">
                   <img src={val.cover} alt={val.name} className="serum" />
