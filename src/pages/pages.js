@@ -24,7 +24,7 @@ const Pages = () => {
         }
     }
 
-    console.log('cart-item', CartItem)
+    // console.log('cart-item', CartItem)
 
     return (
         <section>

@@ -4,15 +4,11 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import { useSelector } from "react-redux";
-import AddressForm from './addressForm';
-// import '../checkout/checkout.css'
 import Grid from '@mui/material/Grid';
 
 const Review = ({ formData }) => {
     
     console.log(`form-dataa: ${formData}`);
-
-
 
     const CartItem = useSelector((state) => state.recipe.CartItem)
     const totalPrice = CartItem.reduce((total, { price, qty }) => {

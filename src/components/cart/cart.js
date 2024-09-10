@@ -4,9 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { AddItemToCart, RemoveItemfromCart, DeleteItemfromCart } from "../../redux/reducer";
 import { NavLink, } from 'react-router-dom';
 
-
-
-
 const Cart = () => {
 
   const dispatch = useDispatch()

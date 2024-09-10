@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pages from './pages/pages';
 import About from './components/home/about.js';
@@ -12,18 +12,13 @@ import Footer from './components/footer/footer';
 import Sdata from './components/shopp/sdata.js';
 import Data from './components/Data.js';
 import Checkout from './components/checkout/checkout.js';
-import { AddItemToCart, RemoveItemfromCart } from './redux/reducer.js';
-import { useDispatch } from 'react-redux';
 import Serums from './components/store/serums.js';
-import Products from './components/axios/products.js';
 
 
 function App() {
 
   const { productItems } = Data
   const { shopItems } = Sdata
-
- 
 
   return (
     <section className="Container">
@@ -38,9 +33,6 @@ function App() {
           <Route path="/cart" element={<Cart   />} />
           <Route path="/checkout" element={<Checkout  />} />
           <Route path="/serums" element={<Serums  />} />
-          <Route path="/face-serums" elements ={<Products/>} />
-  
-
         </Routes>
       </Router>
 

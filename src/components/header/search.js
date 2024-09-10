@@ -55,9 +55,7 @@ const Search = () => {
                 <div className="search-box ">
 
                     <Accordion>
-                        <AccordionSummary
-
-                        >
+                        <AccordionSummary>
                             <i className="fa fa-search"></i>
                             <input
                                 type="text"
@@ -66,9 +64,8 @@ const Search = () => {
                                 placeholder='Search and hit enter...'
                             />
                         </AccordionSummary>
+
                         <AccordionDetails>
-
-
                             {searchResults.length > 0 && (
                                 <div className="dropdown">
                                     {searchResults.map((result) => (
@@ -83,7 +80,6 @@ const Search = () => {
                                     ))}
                                 </div>
                             )}
-
                         </AccordionDetails>
                     </Accordion>
 

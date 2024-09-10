@@ -4,7 +4,7 @@ import '../header/header.css'
 import { useState } from 'react';
 import { NavLink, } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
-import { useSelector } from 'react-redux'; 
+import { useSelector } from 'react-redux';
 import { selectCartItemCount } from '../../redux/reducer';
 import Search from './search';
 
@@ -68,8 +68,6 @@ const Header = () => {
                                         )}
                                     </NavLink>
                                 </li>
-
-
                             </ul>
 
                         </Navbar.Collapse>

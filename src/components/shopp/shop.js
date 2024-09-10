@@ -15,14 +15,13 @@ const Shops = () => {
     const dispatch = useDispatch()
 
 
-    // State to track if a product has been liked or not
     const [likes, setLikes] = useState({});
 
-    // Toggle like/unlike functionality for a specific product
+   
     const toggleLike = (productId) => {
         setLikes((prevLikes) => ({
             ...prevLikes,
-            [productId]: !prevLikes[productId], // Toggle like status
+            [productId]: !prevLikes[productId], 
         }));
     };
     
@@ -35,7 +34,7 @@ const Shops = () => {
 
     const settings = {
         dots: false,
-        speed: 4000,
+        speed: 3000,
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,

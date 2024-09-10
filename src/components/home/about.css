@@ -58,32 +58,32 @@ h6,
 .about-text{
     text-align: left;
 }
-.about-text h4{
-    color: #B78D65;
+
+.about-text h4 {
+    color: var(--primary);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
-.cont{
-    border: 5px solid #B78D65;
+
+.cont {
+    border: 5px solid var(--primary);
     width: 120px;
     height: 120px; 
 }
-.btn{
-    background-color:#B78D65;
+
+.btn {
+    background-color: var(--primary);
     border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
-.btn:hover{
-    background-color: #B78D65;
-    color: #252525;
-    
+
+.btn:hover {
+    background-color: var(--dark);
+    color: #fff;
 }
+
 a{
     text-decoration: none;
 }
 
-@media (min-width: 768px) {
-    .about-imgt{
-        margin-bottom: 50px;
-    }
-    
-}

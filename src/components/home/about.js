@@ -3,11 +3,8 @@ import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../home/about.css'
 import WOW from "wowjs";
-
 import img4 from "../../assets/images/img4.jpg";
 import img5 from "../../assets/images/img5.jpg";
-// import Shop from "../shop/shop";
-
 
 
 const About = () => {

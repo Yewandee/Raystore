@@ -107,17 +107,6 @@ const Payment = () => {
           </div>
         </Grid>
 
-
-
-        {/* <Grid item xs={12} className='option'>
-          Bank Transfer
-        </Grid>
-        <Grid item xs={12} className='option'>
-          Card
-        </Grid>
-        <Grid item xs={12} className='option'>
-          Bank Account
-        </Grid> */}
       </Grid>
     </React.Fragment>
 
