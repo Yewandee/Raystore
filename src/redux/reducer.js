@@ -38,8 +38,11 @@ export const recipeReducer = createSlice({
                 ...state,
                 CartItem: updatedCart,
             };
-
+        },
+        clearCart: (state) => {
+            state.CartItem = [];
         }
+        
     }
 })
 
@@ -47,9 +50,13 @@ export const {
     setMode,
     AddItemToCart,
     RemoveItemfromCart,
-    DeleteItemfromCart
+    DeleteItemfromCart,
+    clearCart
 } = recipeReducer.actions;
 
 export default recipeReducer.reducer;
 
-export const selectCartItemCount = (state) => state.recipe.CartItem.reduce((total, item) => total + (item.qty || 0), 0);
+
+export const selectCartItemCount = (state) =>
+    state.recipe.CartItem.reduce((total, item) => total + (item.qty || 0), 0);
+

@@ -2,7 +2,7 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./serum.css"
 import Grid from '@mui/material/Grid';
-import Sdata from "./storedata";
+import Sdata from '../shopp/sdata'
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import { useDispatch } from 'react-redux';
@@ -18,7 +18,7 @@ const Serums = () => {
 
   const addToCart = (product) => {
     dispatch(AddItemToCart(product))
-    console.log(`products clicked`,product)
+    // console.log(`products clicked`,product)
   }
 
   const SDataValue = Sdata.shopItems

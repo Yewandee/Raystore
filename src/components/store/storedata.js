@@ -9,7 +9,7 @@ import img6 from "../../assets/images/img16.jpg";
 const Sdata = {
     shopItems: [
     {
-        id: 4,
+        id: 1,
         cover: img1,
         name: "Soft Care",
         price: "6000",
@@ -17,7 +17,7 @@ const Sdata = {
         qty: "1",
     },
     {
-        id: 5,
+        id: 2,
         cover: img2,
         name: "Moisturizer",
         price: "4000",
@@ -25,7 +25,7 @@ const Sdata = {
         qty: "1",
     },
     {
-        id: 6,
+        id: 3,
         cover: img3,
         name: "Face Wash",
         price: "4000",
@@ -33,7 +33,7 @@ const Sdata = {
         qty: "1",
     },
     {
-        id: 7,
+        id: 4,
         cover: img4,
         name: "Gentle Wash",
         price: "5000",
@@ -41,7 +41,7 @@ const Sdata = {
         qty: "1",
     },
     {
-        id: 8,
+        id: 5,
         cover: img5,
         name: "Hydraucloric Acid",
         price: "6000",
@@ -49,7 +49,7 @@ const Sdata = {
         qty: "1",
     },
     {
-        id: 9,
+        id: 6,
         cover: img6,
         name: "Serum",
         price: "4500",

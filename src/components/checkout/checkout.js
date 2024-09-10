@@ -9,17 +9,17 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Review from './review';
 import Payment from './payment';
-
 import Congratulations from "../../assets/images/congratulations.jpg"
 import { Link } from 'react-router-dom';
-
-
+import { useDispatch } from 'react-redux';
+import { clearCart } from '../../redux/reducer';
 
 
 const steps = ['Shipping address', 'Review your order', 'Payment Details'];
 
 const Checkout = () => {
     const [activeStep, setActiveStep] = React.useState(0);
+    const dispatch = useDispatch();
 
     const handleNext = () => {
         setActiveStep(activeStep + 1);
@@ -30,6 +30,10 @@ const Checkout = () => {
     };
 
 
+    const handlePlaceOrder = () => {
+        dispatch(clearCart());
+        handleNext();
+    };
 
     const [submittedData, setSubmittedData] = useState("");
 
@@ -93,7 +97,7 @@ const Checkout = () => {
 
                             <Button
                                 variant="contained"
-                                onClick={handleNext}
+                                onClick={activeStep === steps.length - 1 ? handlePlaceOrder : handleNext}
                                 sx={{ mt: 3, ml: 1 }}
                             >
                                 {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
